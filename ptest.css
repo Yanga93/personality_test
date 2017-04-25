@@ -1,7 +1,26 @@
+h1{
+    text-align: center;
+    background: rgb(212, 136, 58);
+    font-size: 3em;
+    color: white;
+}
+p{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 2em;
+}
+ol{
+    margin-left: 11em;
+    font-size: 33px;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+}
+.radioButtons{
+    text-align: center;
 }
 
 a:hover {
@@ -15,6 +34,9 @@ a:hover {
 }
 
 .next {
-    background-color: #4CAF50;
+    background: rgb(212, 136, 58);
     color: white;
+    font-size: 2em;
+    margin-left: 16em;
+    margin-top: 1em;
 }
