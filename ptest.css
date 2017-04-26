@@ -39,4 +39,9 @@ a:hover {
     font-size: 2em;
     margin-left: 16em;
     margin-top: 1em;
+    
+}
+.legendTest{
+  text-align: center;
+  font-size: 2em;
 }

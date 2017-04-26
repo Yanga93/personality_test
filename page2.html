@@ -3,39 +3,53 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Take a Test</title>
+  <title>Take the Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <link rel="stylesheet" href="ptest.css">
 </head>
 
 <body>
   <div class="main container">
+    <script class="Template" type="text/handlebars-x">
+    <h1>YOUR PERSONALITY TYPE IS:<h1>
+    {{#each}}
+      {{personalities}}
+    {{/each}}
+    </script>
 
     <!-- <h1>Free Personality Test</h1> -->
     <a href="index.html" class="previous">&laquo; Back to Homepage</a>
-    <div class="radioButtons">
-      <div class="radioBtnA">
-        details1 goes here <br>
-        <input type="radio" class="agreeA" name="Agree"><br> Agree
-        <input type="radio" class="nuetral" name=""> <br>
-        <input type="radio" class="disagreeA" name="Disgree"><br> Disagree
+    <fieldset>
+      <legend class="legendTest"><b>Take the Test</b></legend>
+
+      <div class="radioButtons">
+        <div class="radioBtnA">
+          details1 goes here <br>
+          <input type="radio" class="agreeA" name="optionA">Agree</input>
+          <input type="radio" class="nuetral" name="optionA">Nuetral</input>
+          <input type="radio" class="disagreeA" name="optionA">Disagree</input>
+        </div>
+        <br>
+        <hr>
+        <div class="radioBtnB">
+          details2 goes here <br>
+          <input type="radio" class="agreeB" name="optionB">Agree</input>
+          <input type="radio" class="nuetral" name="optionB">Nuetral</input>
+          <input type="radio" class="disagreeB" name="optionB">Disagree</input>
+        </div>
+        <br>
+        <hr>
+        <div class="radioBtnC">
+          details3 goes here <br>
+          <input type="radio" class="agreeC" name="optionC">Agree</input>
+          <input type="radio" class="nuetral" name="optionC">Nuetral</input>
+          <input type="radio" class="disagreeC" name="optionC">Disagree</input>
+        </div><br>
+        <input type="button" class="submitBtn" value="SUBMIT">
       </div>
-      <br>
-      <hr>
-      <div class="radioBtnB">
-        details2 goes here <br>
-        <input type="radio" class="agreeB" name="Agree">
-        <input type="radio" class="nuetral" name="">
-        <input type="radio" class="disagreeB" name="Disagree">
-      </div>
-      <br>
-      <hr>
-      <div class="radioBtnC">
-        details3 goes here <br>
-        <input type="radio" class="agreeC" name="Agree">
-        <input type="radio" class="nuetral" name="">
-        <input type="radio" class="disagreeC" name="Disagree">
-      </div>
-    </div>
+    </fieldset>
+    <div class="displayPersonality"><li></li></div>
+    <script src="ptest.js" charset="utf-8"></script>
   </div>
 </body>
 
