@@ -25,7 +25,7 @@ a {
 }
 .radioButtons{
     text-align: center;
-}
+  }
 
 a:hover {
     background-color: #ddd;
@@ -56,30 +56,11 @@ a:hover {
     text-align: center;
     font-size: 2em;
 }
-.personalityTypes{
-    display: block;
+
+.hide {
+  display: none;
 }
-.Logician{
-    display: none;
-}
-.Architech{
-    display: none;
-}
-.Commander{
-    display: none;
-}
-.Debater{
-    display: none;
-}
-.Advocate{
-    display: none;
-}
-.Mediator{
-    display: none;
-}
-.Protagonist{
-    display: none;
-}
-.Executive{
-    display: none;
+
+.show {
+  display: block;
 }
