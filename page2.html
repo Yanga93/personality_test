@@ -10,13 +10,6 @@
 
 <body>
   <div class="main container">
-    <script class="Template" type="text/handlebars-x">
-    <h1>YOUR PERSONALITY TYPE IS:<h1>
-    {{#each}}
-      {{personalities}}
-    {{/each}}
-    </script>
-
     <!-- <h1>Free Personality Test</h1> -->
     <a href="index.html" class="previous">&laquo; Back to Homepage</a>
     <fieldset>
@@ -48,7 +41,41 @@
         <input type="button" class="submitBtn" value="SUBMIT">
       </div>
     </fieldset>
-    <div class="displayPersonality"><li></li></div>
+    <div class="personalityTypes">
+      <div class="Logician">
+        <h2>Logician:</h2>
+        <p>Innovative investors with an unquechable thirst for knowledge.</p>
+      </div>
+      <div class="Architech">
+        <h2>Architech:</h2>
+        <p>Imaginative and strategic thinkers, with a plan for everything.</p>
+      </div>
+      <div class="Commander">
+        <h2>Commander:</h2>
+        <p>Bold, immaginative and strong-willed leaders, always finding way - or making one.</p>
+      </div>
+      <div class="Debater">
+        <h2>Debater:</h2>
+        <p>Smart and curious thinkers who cannot recist an intellectual challenge.</p>
+      </div>
+      <div class="Advocate">
+        <h2>Advocate:</h2>
+        <p>Some text will go here</p>
+      </div>
+      <div class="Mediator">
+        <h2>Mediator:</h2>
+        <p>Some text will go here</p>
+      </div>
+      <div class="Protagonist">
+        <h2>Protagonist:</h2>
+        <p>Some text will go here</p>
+      </div>
+      <div class="Executive">
+        <h2>Executive:</h2>
+        <p>Some text will go here</p>
+      </div>
+    </div>
+    <div class="displayPersonality"></div>
     <script src="ptest.js" charset="utf-8"></script>
   </div>
 </body>

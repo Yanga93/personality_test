@@ -4,6 +4,10 @@ h1{
     font-size: 3em;
     color: white;
 }
+h2{
+    text-align: center;
+    background: rgb(212, 136, 58);p
+}
 p{
     text-align: center;
     font-size: xx-large;
@@ -29,8 +33,9 @@ a:hover {
 }
 
 .previous {
-    background-color: #f1f1f1;
-    color: black;
+    background: rgb(212, 136, 58);
+    color: white;
+    font-size: 1.5em;
 }
 
 .next {
@@ -39,9 +44,42 @@ a:hover {
     font-size: 2em;
     margin-left: 16em;
     margin-top: 1em;
-    
+
+}
+.submitBtn{
+    cursor: pointer;
+    background: rgb(212, 136, 58);
+    color: white;
+    font-size: 1.5em;
 }
 .legendTest{
-  text-align: center;
-  font-size: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+.personalityTypes{
+    display: block;
+}
+.Logician{
+    display: none;
+}
+.Architech{
+    display: none;
+}
+.Commander{
+    display: none;
+}
+.Debater{
+    display: none;
+}
+.Advocate{
+    display: none;
+}
+.Mediator{
+    display: none;
+}
+.Protagonist{
+    display: none;
+}
+.Executive{
+    display: none;
 }
