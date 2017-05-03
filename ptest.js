@@ -11,16 +11,10 @@ var submitBtn = document.querySelector(".submitBtn");
 
 var output = document.querySelector(".displayPersonality");
 
-var Template = document.querySelector(".Template");
-
-// var compileTemp = Handlebars.compile(Template.innerHTML);
-
 // container of all the persoanlitities
 var personalityTypes = document.querySelector(".personalityTypes");
 
-//List of all personalities
-var Logician = document.querySelector(".Logician");
-
+//Create function for all personalities
 function isLogician(){
   // AAA
   if (agreeA.checked && agreeB.checked && agreeC.checked){
@@ -104,7 +98,6 @@ submitBtn.addEventListener("click", function() {
 
   var theType = getType();
 
-  // console.log(theType);
 
   var elem = document.querySelector("." + theType);
 
