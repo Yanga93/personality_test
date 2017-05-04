@@ -68,3 +68,29 @@ a:hover {
 .show {
   display: block;
 }
+.logicianImg{
+  float: left;
+}
+.architectImg{
+  float: left;
+  width: 30em;
+}
+.commanderImg{
+  float: left;
+  width: 21em;
+}
+.debaterImg{
+  float: left;
+  width: 29em;
+  padding: 1em;
+}
+.advocateImg{
+  float: left;
+}
+.mediatorImg{
+  float: left;
+  width: 24em;
+}
+.protagonistImg{
+  float: left;
+}

@@ -23,10 +23,10 @@ function isLogician(){
   return '';
 }
 
-function isArchitech(){
+function isArchitect(){
   // AAD
   if (agreeA.checked && agreeB.checked && !agreeC.checked){
-    return 'Architech';
+    return 'Architect';
   }
   return '';
 }
@@ -46,7 +46,7 @@ function isDebater(){
 }
 function isAdvocate(){
   // DDD
-  if (!agreeA.checked && !agreeB.checked && !agreeC.checked){
+  if (disagreeA.checked && disagreeB.checked && disagreeC.checked){
     return 'Advocate';
   }
   return '';
@@ -74,7 +74,7 @@ function isExecutive(){
 }
 
 // add any new personalty checking functions in here
-var typeFuncs = [isLogician, isArchitech, isCommander, isDebater, isAdvocate, isMediator,
+var typeFuncs = [isLogician, isArchitect, isCommander, isDebater, isAdvocate, isMediator,
  isProtagonist, isExecutive];
 
 function getType(){
@@ -102,6 +102,16 @@ submitBtn.addEventListener("click", function() {
   var elem = document.querySelector("." + theType);
 
 
-  elem.classList.add('show')
+  elem.classList.add('show');
+
+  // document.querySelector('.agreeA') === "";
+  // document.querySelector('.disagreeA') === "";
+  //
+  // document.querySelector('.agreeB') === "";
+  // document.querySelector('.disagreeB') === "";
+  //
+  // document.querySelector('.agreeC') === "";
+  // document.querySelector('.disagreeC') === "";
+
 
 });
