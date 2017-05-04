@@ -96,22 +96,18 @@ function getType(){
 }
 submitBtn.addEventListener("click", function() {
 
+  var personalities = document.querySelectorAll('.personality')
+  for (var i = 0; i < personalities.length; i++) {
+    var personality = personalities[i];
+    personality.classList.remove('show');
+  }
+
+
   var theType = getType();
-
-
   var elem = document.querySelector("." + theType);
 
 
   elem.classList.add('show');
-
-  // document.querySelector('.agreeA') === "";
-  // document.querySelector('.disagreeA') === "";
-  //
-  // document.querySelector('.agreeB') === "";
-  // document.querySelector('.disagreeB') === "";
-  //
-  // document.querySelector('.agreeC') === "";
-  // document.querySelector('.disagreeC') === "";
 
 
 });
